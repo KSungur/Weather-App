@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather App</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<!-- back-rain back-snow back-cloud back-sunny -->
+
+<body>
+    <img id="backgroundImg" class="start" alt="" />
+    <div class="container">
+        <div class="title text-center">
+            <h1>Weather App</h1>
+        </div>
+        <div class="response text-center">
+            <div class="form-group row" id="getCity">
+                <div class="col-md-6 col-md-offset-3">
+                    <input id="city" name="city" type="text" placeholder="City" class="form-control text-center" required=""><br>
+                    <button type="button" class="btn btn-lg btn-primary" onclick="updateByCity()">Search</button>
+                </div>
+            </div>
+
+            <span style="cursor: pointer;color:#fffc00;" id="temperature" class="toggle"></span>
+            <span id="location"></span>
+            <span id="country"></span><br>
+            <span id="condition"></span>
+        </div>
+    </div>
+    <footer class="footer">
+        <h4 class="made_by text-center">Designed by KSungur</h4>
+    </footer>
+</body>
+
+</html>
