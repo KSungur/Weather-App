@@ -1,0 +1,100 @@
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  letter-spacing:1px;
+  color: #FFF;
+}
+.start {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  min-width: 100%;
+  min-height:100%;
+  background-image: url("images/main.jpg");
+}
+.clear_img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  min-width: 100%;
+  min-height:100%;
+  background-image: url("images/clear.jpg");
+  }
+.rain_img{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  min-width: 100%;
+  min-height:100%;
+  background-image: url("images/rain.jpg");
+  }
+.cloud_img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  min-width: 100%;
+  min-height:100%;
+  background-image: url("images/clouds.jpg");
+}
+.snow_img {
+  background-image: url("images/snow.jpg");
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  min-width: 100%;
+  min-height:100%;
+}
+.mist_img {
+  background-image: url("images/mist.jpg");
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  min-width: 100%;
+  min-height:100%;
+}
+.thunder_img {
+  background-image: url("images/thunder.jpg");
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  min-width: 100%;
+  min-height:100%;
+}
+.response {
+  margin-top: 150px;
+}
+#temperature{
+  font-size: 30px;
+}
+#location {
+  font-size: 25px;
+}
+#country {
+  font-size: 30px;
+}
+#condition {
+  text-decoration: underline;
+}
+h1 {
+  font-size:64px;
+  font-weight:700;
+  color:#FFF;
+}
+.made_by {
+  position:relative;
+  bottom:10px;
+  color:#FFF;
+  font-weight:400;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+}
