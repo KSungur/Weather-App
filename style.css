@@ -1,100 +1,94 @@
 body {
-  font-family: "Helvetica", "Arial", sans-serif;
-  letter-spacing:1px;
-  color: #FFF;
+    font-family: "Helvetica", "Arial", sans-serif;
+    letter-spacing: 1px;
+    color: #FFF;
 }
+
+.start, .clear_img, .rain_img, .cloud_img, .snow_img, .mist_img, .thunder_img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    min-width: 100%;
+    min-height: 100%;
+}
+
 .start {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -10;
-  min-width: 100%;
-  min-height:100%;
-  background-image: url("images/main.jpg");
+    background-image: url("images/main.jpg");
 }
+
 .clear_img {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -10;
-  min-width: 100%;
-  min-height:100%;
-  background-image: url("images/clear.jpg");
-  }
-.rain_img{
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -10;
-  min-width: 100%;
-  min-height:100%;
-  background-image: url("images/rain.jpg");
-  }
+    background-image: url("images/clear.jpg");
+}
+
+.rain_img {
+    background-image: url("images/rain.jpg");
+}
+
 .cloud_img {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -10;
-  min-width: 100%;
-  min-height:100%;
-  background-image: url("images/clouds.jpg");
+    background-image: url("images/clouds.jpg");
 }
+
 .snow_img {
-  background-image: url("images/snow.jpg");
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -10;
-  min-width: 100%;
-  min-height:100%;
+    background-image: url("images/snow.jpg");
 }
+
 .mist_img {
-  background-image: url("images/mist.jpg");
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -10;
-  min-width: 100%;
-  min-height:100%;
+    background-image: url("images/mist.jpg");
 }
+
 .thunder_img {
-  background-image: url("images/thunder.jpg");
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -10;
-  min-width: 100%;
-  min-height:100%;
+    background-image: url("images/thunder.jpg");
 }
+
 .response {
-  margin-top: 150px;
+    margin-top: 150px;
 }
-#temperature{
-  font-size: 30px;
+
+#temperature {
+    font-size: 30px;
 }
+
 #location {
-  font-size: 25px;
+    font-size: 25px;
 }
+
 #country {
-  font-size: 30px;
+    font-size: 30px;
 }
+
 #condition {
-  text-decoration: underline;
+    text-decoration: underline;
 }
+
 h1 {
-  font-size:64px;
-  font-weight:700;
-  color:#FFF;
+    font-size: 64px;
+    font-weight: 700;
+    color: #FFF;
 }
+
 .made_by {
-  position:relative;
-  bottom:10px;
-  color:#FFF;
-  font-weight:400;
+    position: relative;
+    bottom: 10px;
+    color: #FFF;
+    font-weight: 400;
 }
+
 footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+
+@media (max-width: 575px) {
+    .response {
+        margin-top: 100px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 736px) and (orientation: landscape) {
+    .response {
+        margin-top: 85px;
+    }
 }
